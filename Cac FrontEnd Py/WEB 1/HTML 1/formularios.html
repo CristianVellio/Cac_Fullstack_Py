@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Login</title>
+</head>
+<body>
+
+    <header>
+        <h1>Ingresar al Sitio</h1>
+    </header>
+
+    <div>
+        <form action="mailto:mail@mail.com" method="post">
+
+            <!-- Usuario / Password -->
+            <div>
+                <!-- Lo que llamamos "Etiquetas" en ingles son TAGS, y las Labels son rotulos -->
+                <label>
+                    Usuario:
+                    <!-- Estas inputas a diferencia de los lenguajes NO SE PUEDEN INVENTAR,
+                        existe un catalogo preestablecido de posibles inputs -->
+                    <input type="text" name="user" required placeholder="Usuario">
+                </label>
+            </div>
+            <div>
+                <!-- Practica mas aceptada para realizarlo con For y Id -->
+                <label for="Password">
+                    Password:
+                </label>
+                <input type="password" name="password" required id="Password">
+            </div>
+            <div>
+                <input type="submit" value="Log In">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

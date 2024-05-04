@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Multimedia HTML</h1>
+      <!-- FavIcon .ico / .png / .gif / .jpg -> 512x512px -->
+      <link
+        rel="shortcut icon"
+        href="favicon/superman.png"
+        type="image/x-icon"
+      />
+    </header>
+
+    <div>
+      <h2>Imagenes Remotas (API)</h2>
+      <img src="https://picsum.photos/id/237/200/300" alt="Picsum Image" />
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>
+        <h2>Audio</h2>
+        <!-- El Embedded es un recurso OBSOLETO NO USAR MALA PRACTIVA -->
+        <!-- <embed src="" type=""> -->
+        <!-- Ho en dia se usan los CONTENEDORES (etiquetas contenedoras) -->
+        <audio controls autoplay preload="auto" loop muted>
+          <!-- Formatos: .mp3 /(Chrome prefiere .mp que wav) .wav / 
+                .ogg (Firefox prefiere ogg antes que .mp3)(Edge no reproduce .ogg)-->
+          <source src="audios/gallo.mp3" />
+          <source src="audios/gallo.wav" />
+          <source src="audios/gallo.ogg" />
+          <!-- El navegador o sistema operativo automaticamente
+                elige el que mejor compatibilidad tenga FORMA OPTIMA-->
+        </audio>
+        <!-- autoplay (para que se autoreproduzca) -->
+        <!-- loop (reproduccion en bucle) -->
+        <!-- preload="auto" (para que se pre-cargue una porcion y sea una reproduccion m,as progresiva) -->
+        <!-- muted (para silenciar) -->
+      </h2>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>Videos</h2>
+      <video controls poster="Imagenes/chrome logo.jpg">
+        <!-- Poster define el primer fotograme creando una portada del video -->
+        <!-- Formatos: .mp4 / .ogv / .webm / .avi (desventajas tasa) -->
+        <source src="videos/Chrome_ImF.mp4" />
+        <source src="videos/Chrome_ImF.ogv" />
+        <source src="videos/Chrome_ImF.webm" />
+      </video>
+    </div>
+    <hr />
+
+    <div>
+      <h2>Contenido Embebido (YouTube, Google Maps, Spotify, etc)</h2>
+      <!-- Uso de Etiquetas Iframe -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JJZBpNGTzq8?si=8A_OPxg-zCA10qqc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <h3>Google Maps</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d54474.309091836985!2d-64.2300156434212!3d-31.42392434683193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x9432a29485b6a837%3A0xdb4ff7493d3ed589!2sParque%20Sarmiento%2C%20Deodoro%20Roca%2C%20C%C3%B3rdoba!3m2!1d-31.4283845!2d-64.1747778!4m5!1s0x943298830933ad09%3A0xb72fd713f4c77c4e!2sNuevocentro%20Shopping!3m2!1d-31.4129589!2d-64.2045375!5e0!3m2!1ses!2sar!4v1710480803765!5m2!1ses!2sar"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <h3>Spotify</h3>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZd79rJ6a7lp?utm_source=generator"
+        width="100%"
+        height="152"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </body>
+</html>

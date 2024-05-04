@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contactanos</h1>
+        <p>Campos obligatorios *</p>
+    </header>
+
+    <div>
+        <form action="mailto:mail@mail.com" method="post">
+
+            <div>
+                <label>
+                    * Nombre:
+                    <input type="text" name="nombre" required>
+                </label>
+            </div>
+            <div>
+                <label for="CampoEmail">
+                    *Email:
+                </label>
+                <input type="email" name="email" required id="CampoEmail">
+            </div>
+            <div>
+                <input type="submit" value="Log In">
+            </div>
+
+            <!-- En los campos tipo text o donde el usuario debe ingresar texto no se usan value="" -->
+
+            <div>
+                <label>
+                    Cumpleaños:
+                    <input type="date" name="fechaCumple">
+                </label>
+            </div>
+
+            <div>
+                Asunto:
+                <select name="asunto" required>
+                    <option value="">Selecionar...</option>
+                    <option value="cons">Consulta</option>
+                    <option value="pres">Presupuesto</option>
+                    <option value="Recl">Reclamo</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Genero: </p>
+                F <input type="radio" name="genero" value="fem">
+                M <input type="radio" name="genero" value="masc">
+                X <input type="radio" name="genero" value="otro">
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="Newsletter" value="si" checked>
+                    Acepto suscribirme al Newsletter (alto SPAM)
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="terminos" value="si" required>
+                    Acepto los Terminos y condiciones
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Mensaje:
+                    <textarea name="" maxlength="500"></textarea>
+                    <span>(Maximo 500 caracteres)</span>
+                </label>
+            </div>
+
+
+
+            
+        </form>
+        <!-- Nombre /  Email / Fecha / Asunto / Genero / Newsletter / Mensaje -->
+    </div>
+    
+</body>
+</html>

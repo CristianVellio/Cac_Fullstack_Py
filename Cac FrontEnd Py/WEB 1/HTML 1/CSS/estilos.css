@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* fuentes locales --> en el sitio 
+  .ttf / .otf */
+@font-face {
+  font-family: "BERNHC";
+  src: url("../fonts/BERNHC.TTF");
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  /* Degradado */
+  background: linear-gradient(
+    rgba(212, 71, 10, 0.689),
+    rgba(82, 232, 59, 0.584)
+  );
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+h2 {
+  color: rgb(110, 110, 110);
+}
+
+header {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* text-align: center; */
+  /* height: 50vh;
+  width: 50vw; 
+  unidades de medidas relativas al ViewPort*/
+}
+
+header h1 {
+  font-family: "Tourney";
+}
+/* nav {
+  font-family: "Tourney";
+} */
+
+#color-header {
+  color: red;
+}
+
+header,
+nav,
+section,
+footer {
+  background: rgba(255, 255, 255, 0.534);
+  /* medidas absolutas */
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* medidas relativas */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenido_principal {
+  /* width: 60%; */
+  border: 1px solid black;
+}
+
+/* section {
+  background: url("../Imagenes/superman.png"), rgba(29, 143, 210, 0.621);
+  background-size: 100%;
+} */
+
+.textos {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 14px;
+}
+/* selector con anidación */
+.textos p {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+p {
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-size: 14px;
+}
+
+/* Selector de clase */
+.primerparrafo {
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.section {
+  background-color: rgba(218, 215, 215, 0.808);
+}
+
+/* Selector de ID */
+#section-main {
+  border: 1px solid rgb(67, 67, 67);
+}
+
+/* Selector Universal nos permite definir reseteos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Modelo de Caja 
+  width + padding + border
+*/
+.boxmodel {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cajas {
+  background: rgb(5, 5, 135);
+  /* width: calc(50% - 20px - 10px); */
+  width: 33%;
+  padding: 10px;
+  border: 5px solid black;
+
+  box-sizing: border-box;
+}
+
+/* menu de navegacion */
+.navbar {
+  padding: 2%;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar ul li {
+}
+.navbar ul li a {
+  padding: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* :pseudoclases --> se añade a los selectores y que especifica
+un estado especial del elemento seleccionado */
+/* ::pseudoelementos */
+/* .navbar ul li a:hover {
+  background: rgba(245, 245, 245, 0.664);
+}
+.navbar ul li a:active {
+  background: rgba(245, 245, 245, 0.664);
+} */
+
+/* AGRUPAR PARA MEJOR PRACTICA 
+Hover se usa para maouse y active para tactil en dispositivos moviles
+ siempre se debe incluir ambas opciones*/
+.navbar ul li a:hover,
+.navbar ul li a:active {
+  background: rgba(245, 245, 245, 0.664);
+}
+
+::selection {
+  background: blue;
+}
+
+/* posicionamientos 
+position: static; default
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+z-index --> maneja el eje z y permite que los elementos pasen por delante y por detrás
+es decir el eje Z de la profundidad
+*/
+.promo {
+  background-color: rgb(197, 9, 197);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 1%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+section {
+  position: relative;
+  z-index: 0;
+}
