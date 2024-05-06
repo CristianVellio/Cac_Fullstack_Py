@@ -2,7 +2,10 @@
 
 class Libros {
   constructor(tit, aut, lan, sto) {
-    (titulo = tit), (autor = aut), (lanzamiento = lan), (stock = sto);
+    (this.titulo = tit),
+      (this.autor = aut),
+      (this.lanzamiento = lan),
+      (this.stock = sto);
   }
 }
 
