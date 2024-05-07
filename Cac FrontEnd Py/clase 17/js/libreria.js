@@ -22,8 +22,22 @@ crearLibro("Mas cuentos", "E. Sachieri", 2006, 67);
 
 // DOM - Document Object Model
 
+document.getElementById();
+document.getElementsByClassName();
+document.getElementsByName();
+document.getElementsByTagName();
+
+function cargarLibro() {
+  // prevent default
+  // leer datos del form
+  // crear objeto
+  // push en el array
+  // iterar ek array
+  //template string
+}
+
 let contendor = document.querySelector("#libros-oferta");
 
 for (const i of libros) {
-  contendor.innerHTML += "<div>" + i.autor + "</div>";
+  contendor.innerHTML += "<div>" + i.autor + i.titulo + "</div>";
 }
