@@ -27,5 +27,5 @@ UPDATE `alumnos` SET `dni` = '22446687' WHERE `alumnos`.`id` = 3;
 
 DELETE FROM `alumnos` WHERE `alumnos`.`id` = 1
 
-SELECT dni, nombre FROM `alumnos` 
+SELECT dni, nombre FROM `alumnos`
 SELECT dni, nombre FROM `alumnos` WHERE id > 2
